@@ -21,8 +21,8 @@
         .sg-asp-table-header-row,
         .ui-jqgrid-view .ui-jqgrid-hdiv, 
         .ui-jqgrid tr.ui-jqgrid-labels th  {
-	        background-color: white   ;
-            color: #0a542e  ;
+	        background-color: #00427c;
+            color: #FFFFFF;
         }
     </style>
 
@@ -56,7 +56,7 @@
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="76tsrM/KU+lfv/qxy8rjBbPsOqFDttYZ05XS7zY1wAffGybDPBrUktJ2Qd0/PdPmesy1M8nz+F39k8moGGzCl5sonPviyjng0ERVCryZJhSFqTlz3ED1T1H8UPpEqMD3lx75+oNW6TEW/gGavpqUcjh8GTTbYw8Dw9WGca9hPTk=" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="5pHqyP8mo2HjxLpNix7e8t9vERDMuBAy3OkiR69Yg6fgo0L1WQtx7qbNsheNb1vV5id0djUGxM8iCpmmZ9lvYXDYJZYgMw7R7e211nvU9C8uVf222WymMHg4jNrujHi3gbZ+Im2UC70St1aihCevLzdnLUgVvjO5w1A0RGJz/HFW1BznOiVQYJGjpadAS8T6" />
 </div>
 
 <script type="text/javascript">
@@ -79,19 +79,20 @@ function __doPostBack(eventTarget, eventArgument) {
 <div class="aspNetHidden">
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="ECC4EA3A" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="suU9DSBF4a79jMcd4ifSFwqw/ZRWn0CTYiAFf8cnlBGJmkCpwZvS4iYFC+KLDKFjGA5lrFJeabr4WYtEQKBy7vUhAfU2+KOzipk6g2khdIi6l5VMGaYk1LMQQ0m8u30PTy214F7FmwoEZx6BWCx3j4qQsgzmk0QsGLHtFbqU8nQ=" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="sZObIlGW80RDYakucD+TOnJhtr5Ww+iBzKbVBkvNtAcqjIrxjsgeyXsBWa1h18YL7//rErfxqcW8xnaEaqbpjvCyBQ97uRERpC6uj2DkvK/woigrdFWdaEz7atdO71qcrm9Oddj7RdS4fJmTeLOgMyTQmo+yqMduX/lTM4MAvx/cVcEKmS06rkulya3nhKDW" />
 </div>
                 
 
 
 	<div class="sg-header">
-        <input name="ctl00$plnMain$hdnTitle" type="hidden" id="plnMain_hdnTitle" value="Transcript" />
+        <input name="ctl00$plnMain$hdnTitle" type="hidden" id="plnMain_hdnTitle" />
     </div>
     <div class="sg-content-grid">
         <div class="sg-content-grid-container sg-container-content">
-	        <span id="plnMain_lblGroupCourses">Group Courses By:</span>
+	        <span id="plnMain_lblGroupCourses">Group Courses By:&nbsp;</span>
             <select name="ctl00$plnMain$ddlGroupCourses" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ctl00$plnMain$ddlGroupCourses\&#39;,\&#39;\&#39;)&#39;, 0)" id="plnMain_ddlGroupCourses" class="sg-combobox">
 	<option value="Y">Year</option>
+	<option value="D"></option>
 
 </select>
         </div>
@@ -101,23 +102,23 @@ function __doPostBack(eventTarget, eventArgument) {
 					    <table style="width:100%">
 						    <tr>
 							    <td><span id="plnMain_rpTranscriptGroup_lblYear_0" style="font-weight:bold;">Year:</span></td>
-							    <td><span id="plnMain_rpTranscriptGroup_lblYearValue_0">2018-19</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblYearValue_0">2015-2016</span></td>
 							    <td><span id="plnMain_rpTranscriptGroup_lblGroup_0" style="font-weight:bold;"></span></td>
 							    <td><span id="plnMain_rpTranscriptGroup_lblGroupValue_0"></span></td>
 							    <td><span id="plnMain_rpTranscriptGroup_lblGrade_0" style="font-weight:bold;">Grade:</span></td>
-							    <td><span id="plnMain_rpTranscriptGroup_lblGradeValue_0">08</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGradeValue_0">07</span></td>
 						    </tr>
 						    <tr>
 							    <td><span id="plnMain_rpTranscriptGroup_lblBuilding_0" style="font-weight:bold;">Building:</span></td>
-							    <td colspan=3><span id="plnMain_rpTranscriptGroup_lblBuildingValue_0">Ridgeview Middle School</span></td>
+							    <td colspan=3><span id="plnMain_rpTranscriptGroup_lblBuildingValue_0">Cedar Valley Middle School</span></td>
 						    </tr>						
 					    </table>														
 
 					    <table class="sg-asp-table" cellspacing="0" rules="all" border="1" id="plnMain_rpTranscriptGroup_dgCourses_0" style="width:100%;border-collapse:collapse;">
 	<tr class="sg-asp-table-header-row">
-		<td>Course</td><td>Description</td><td>SEM1</td><td>SEM2</td><td>Final</td><td>Credit</td>
+		<td>Course</td><td>Description</td><td>SEM1</td><td>SEM2</td><td>FIN</td><td>Credit</td>
 	</tr><tr class="sg-asp-table-data-row">
-		<td>03100500 - 1    </td><td>ALG 1</td><td align="center">89        </td><td align="center">94        </td><td align="center">92        </td><td align="right">1.0000</td>
+		<td>MTH11200 - 347  </td><td>PAP Algebra I</td><td align="center">98        </td><td align="center">98        </td><td align="center">98        </td><td align="right">1.0000</td>
 	</tr>
 </table>
 					    <table style="float:right">
@@ -134,39 +135,25 @@ function __doPostBack(eventTarget, eventArgument) {
 					    <table style="width:100%">
 						    <tr>
 							    <td><span id="plnMain_rpTranscriptGroup_lblYear_1" style="font-weight:bold;">Year:</span></td>
-							    <td><span id="plnMain_rpTranscriptGroup_lblYearValue_1">2019-20</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblYearValue_1">2016-2017</span></td>
 							    <td><span id="plnMain_rpTranscriptGroup_lblGroup_1" style="font-weight:bold;"></span></td>
 							    <td><span id="plnMain_rpTranscriptGroup_lblGroupValue_1"></span></td>
 							    <td><span id="plnMain_rpTranscriptGroup_lblGrade_1" style="font-weight:bold;">Grade:</span></td>
-							    <td><span id="plnMain_rpTranscriptGroup_lblGradeValue_1">09</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGradeValue_1">08</span></td>
 						    </tr>
 						    <tr>
 							    <td><span id="plnMain_rpTranscriptGroup_lblBuilding_1" style="font-weight:bold;">Building:</span></td>
-							    <td colspan=3><span id="plnMain_rpTranscriptGroup_lblBuildingValue_1">Cedar Ridge High School</span></td>
+							    <td colspan=3><span id="plnMain_rpTranscriptGroup_lblBuildingValue_1">Wester Middle School</span></td>
 						    </tr>						
 					    </table>														
 
 					    <table class="sg-asp-table" cellspacing="0" rules="all" border="1" id="plnMain_rpTranscriptGroup_dgCourses_1" style="width:100%;border-collapse:collapse;">
 	<tr class="sg-asp-table-header-row">
-		<td>Course</td><td>Description</td><td>SEM1</td><td>SEM2</td><td>Final</td><td>Credit</td>
+		<td>Course</td><td>Description</td><td>SEM1</td><td>SEM2</td><td>FIN</td><td>Credit</td>
 	</tr><tr class="sg-asp-table-data-row">
-		<td>03010200 - 1    </td><td>BIO</td><td align="center">92        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
+		<td>03100700 - 1    </td><td>GEOM</td><td align="center">94        </td><td align="center">96        </td><td align="center">95        </td><td align="right">1.0000</td>
 	</tr><tr class="sg-asp-table-data-row">
-		<td>03100700 - 1    </td><td>GEOM</td><td align="center">82        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>03150100 - 1    </td><td>MUS1BAND</td><td align="center">97        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>03151700 - 1    </td><td>MUS1INEN</td><td align="center">97        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>03220100 - 1    </td><td>ENG 1</td><td align="center">90        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>03440100 - 1    </td><td>SPAN 1</td><td align="center">96        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>PES00012 - 1    </td><td>SUBMB</td><td align="center">P         </td><td align="center">&nbsp;</td><td align="center">P         </td><td align="right">0.5000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>03154200 - 1    </td><td>MUS1PIA</td><td align="center">100       </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
-	</tr><tr class="sg-asp-table-data-row">
-		<td>A3360100 - 1    </td><td>APHUMGEOW</td><td align="center">71        </td><td align="center">P         </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
+		<td>03810100 - 1    </td><td>HLTH ED</td><td align="center">95        </td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="right">0.5000</td>
 	</tr>
 </table>
 					    <table style="float:right">
@@ -174,11 +161,115 @@ function __doPostBack(eventTarget, eventArgument) {
 							    <td></td>
 							    <td><label id="plnMain_rpTranscriptGroup_lblGPAValue_1"></label></td>			
 							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditHeader_1">Total Credit:</label></td> 
-							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditValue_1">8.5000</label></td>			
+							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditValue_1">1.5000</label></td>			
 						    </tr>
 					    </table><br><br>
 			        </td>
 		    </tr><tr>
+				    <td class="sg-transcript-group" >
+					    <table style="width:100%">
+						    <tr>
+							    <td><span id="plnMain_rpTranscriptGroup_lblYear_2" style="font-weight:bold;">Year:</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblYearValue_2">2017-2018</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGroup_2" style="font-weight:bold;"></span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGroupValue_2"></span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGrade_2" style="font-weight:bold;">Grade:</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGradeValue_2">09</span></td>
+						    </tr>
+						    <tr>
+							    <td><span id="plnMain_rpTranscriptGroup_lblBuilding_2" style="font-weight:bold;">Building:</span></td>
+							    <td colspan=3><span id="plnMain_rpTranscriptGroup_lblBuildingValue_2">Liberty High School</span></td>
+						    </tr>						
+					    </table>														
+
+					    <table class="sg-asp-table" cellspacing="0" rules="all" border="1" id="plnMain_rpTranscriptGroup_dgCourses_2" style="width:100%;border-collapse:collapse;">
+	<tr class="sg-asp-table-header-row">
+		<td>Course</td><td>Description</td><td>SEM1</td><td>SEM2</td><td>FIN</td><td>Credit</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03010200 - 1    </td><td>BIO</td><td align="center">100       </td><td align="center">99        </td><td align="center">100       </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03440100 - 1    </td><td>SPAN 1</td><td align="center">100       </td><td align="center">99        </td><td align="center">100       </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03100600 - 1    </td><td>ALG 2</td><td align="center">98        </td><td align="center">97        </td><td align="center">98        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>A3360100 - 1    </td><td>APHUMGEOW</td><td align="center">98        </td><td align="center">99        </td><td align="center">99        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03580200 - 1    </td><td>TACS1</td><td align="center">99        </td><td align="center">100       </td><td align="center">100       </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03580510 - 1    </td><td>TA3DMA</td><td align="center">100       </td><td align="center">100       </td><td align="center">100       </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03220100 - 1    </td><td>ENG 1</td><td align="center">94        </td><td align="center">95        </td><td align="center">95        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>PES00055 - 1    </td><td>PEITS</td><td align="center">100       </td><td align="center">100       </td><td align="center">100       </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>waivertech - 1    </td><td>Tech Waiver</td><td align="center">W         </td><td align="center">W         </td><td align="center">&nbsp;</td><td align="right">0.0000</td>
+	</tr>
+</table>
+					    <table style="float:right">
+						    <tr>
+							    <td></td>
+							    <td><label id="plnMain_rpTranscriptGroup_lblGPAValue_2"></label></td>			
+							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditHeader_2">Total Credit:</label></td> 
+							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditValue_2">8.0000</label></td>			
+						    </tr>
+					    </table><br><br>
+			        </td>
+		    
+				    <td class="sg-transcript-group" >
+					    <table style="width:100%">
+						    <tr>
+							    <td><span id="plnMain_rpTranscriptGroup_lblYear_3" style="font-weight:bold;">Year:</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblYearValue_3">2018-2019</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGroup_3" style="font-weight:bold;"></span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGroupValue_3"></span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGrade_3" style="font-weight:bold;">Grade:</span></td>
+							    <td><span id="plnMain_rpTranscriptGroup_lblGradeValue_3">10</span></td>
+						    </tr>
+						    <tr>
+							    <td><span id="plnMain_rpTranscriptGroup_lblBuilding_3" style="font-weight:bold;">Building:</span></td>
+							    <td colspan=3><span id="plnMain_rpTranscriptGroup_lblBuildingValue_3">Liberty High School</span></td>
+						    </tr>						
+					    </table>														
+
+					    <table class="sg-asp-table" cellspacing="0" rules="all" border="1" id="plnMain_rpTranscriptGroup_dgCourses_3" style="width:100%;border-collapse:collapse;">
+	<tr class="sg-asp-table-header-row">
+		<td>Course</td><td>Description</td><td>SEM1</td><td>SEM2</td><td>FIN</td><td>Credit</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03220200 - 1    </td><td>ENG 2</td><td align="center">97        </td><td align="center">98        </td><td align="center">98        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03040000 - 1    </td><td>CHEM</td><td align="center">99        </td><td align="center">99        </td><td align="center">99        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03440200 - 1    </td><td>SPAN 2</td><td align="center">97        </td><td align="center">98        </td><td align="center">98        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>03101100 - 1    </td><td>PRE CALC</td><td align="center">99        </td><td align="center">99        </td><td align="center">99        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>A3050003 - 1    </td><td>APPHYS1</td><td align="center">100       </td><td align="center">100       </td><td align="center">100       </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>A3100200 - 1    </td><td>APSTATS</td><td align="center">97        </td><td align="center">99        </td><td align="center">98        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>A3370100 - 1    </td><td>APWHIST</td><td align="center">99        </td><td align="center">99        </td><td align="center">99        </td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>A3580110 - 1    </td><td>APTACSAM</td><td align="center">99        </td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>A3580120 - 1    </td><td>APTACSAL</td><td align="center">&nbsp;</td><td align="center">100       </td><td align="center">&nbsp;</td><td align="right">1.0000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>T03241400 - 4    </td><td>Communication Applications</td><td align="center">93        </td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="right">0.5000</td>
+	</tr><tr class="sg-asp-table-data-row">
+		<td>CATE16300 - 11   </td><td>Banking & Financial Services</td><td align="center">92        </td><td align="center">&nbsp;</td><td align="center">&nbsp;</td><td align="right">0.5000</td>
+	</tr>
+</table>
+					    <table style="float:right">
+						    <tr>
+							    <td></td>
+							    <td><label id="plnMain_rpTranscriptGroup_lblGPAValue_3"></label></td>			
+							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditHeader_3">Total Credit:</label></td> 
+							    <td><label id="plnMain_rpTranscriptGroup_LblTCreditValue_3">10.0000</label></td>			
+						    </tr>
+					    </table><br><br>
+			        </td>
+		    </tr><tr>
+				    
+		    <td></td></tr>
 				    <tr >
 					    <td>
 						    <table id="plnMain_rpTranscriptGroup_tblCumGPAInfo" class="sg-asp-table">
@@ -188,13 +279,13 @@ function __doPostBack(eventTarget, eventArgument) {
 		<td id="plnMain_rpTranscriptGroup_tdGPARankHeader"><label id="plnMain_rpTranscriptGroup_lblGPARankHeader">Rank</label></td>
 	</tr>
 	<tr id="plnMain_rpTranscriptGroup_trGPA1" class="sg-asp-table-data-row">
-		<td><span id="plnMain_rpTranscriptGroup_lblGPADescr1">5.0 GPA</span></td>
-		<td><span id="plnMain_rpTranscriptGroup_lblGPACum1">4.4200</span></td>
-		<td id="plnMain_rpTranscriptGroup_tdGPARank1"><span id="plnMain_rpTranscriptGroup_lblGPARank1">226 / 758</span></td>
+		<td><span id="plnMain_rpTranscriptGroup_lblGPADescr1">Weighted GPA</span></td>
+		<td><span id="plnMain_rpTranscriptGroup_lblGPACum1">4.7060</span></td>
+		<td id="plnMain_rpTranscriptGroup_tdGPARank1"><span id="plnMain_rpTranscriptGroup_lblGPARank1">45 / 466</span></td>
 	</tr>
 	<tr id="plnMain_rpTranscriptGroup_trGPA2" class="sg-asp-table-data-row">
-		<td><span id="plnMain_rpTranscriptGroup_lblGPADescr2">4.0 GPA</span></td>
-		<td><span id="plnMain_rpTranscriptGroup_lblGPACum2">3.6250</span></td>
+		<td><span id="plnMain_rpTranscriptGroup_lblGPADescr2">4.0 College GPA</span></td>
+		<td><span id="plnMain_rpTranscriptGroup_lblGPACum2">3.8910</span></td>
 		<td id="plnMain_rpTranscriptGroup_tdGPARank2"></td>
 	</tr>
 </table>

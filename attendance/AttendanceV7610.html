@@ -1,340 +1,0 @@
-
-
-<!DOCTYPE html>
-<html>
-<head><title>
-	HomeAccess
-</title>
-    
-    <link href="/HomeAccess/Stylesheets/Themes/custom-theme/jquery?v=khU3GP_ixo8tMiLwXJEqkRywEE1c7SBpfpbj4KSDyXA1" rel="Stylesheet" type="text/css" /> 
-
-    
-    <link rel="Stylesheet" href="../../eSchoolPLUSResource/GetEmbeddedStyle?file=CrossSite" />
-    <link rel="Stylesheet" href="../../eSchoolPLUSResource/GetEmbeddedStyle?file=ComboBox" />
-    <link rel="Stylesheet" href="../../Stylesheets/Common/font-awesome.css" />
-    
-    
-    <link rel="Stylesheet" href="../../Stylesheets/Site.css" />
-    <link rel="stylesheet" href="../../Stylesheets/Frame/Frame.css" /> 
-    <link rel="SHORTCUT ICON" href="../../Media/Themes/Base/Common/favicon.ico"/>
-    <style>
-        .sg-asp-table-header-row,
-        .ui-jqgrid-view .ui-jqgrid-hdiv, 
-        .ui-jqgrid tr.ui-jqgrid-labels th  {
-	        background-color: white   ;
-            color: #0a542e  ;
-        }
-    </style>
-
-    <script src="/HomeAccess/Scripts/libs/jquery?v=kFkgd6hNofX_b_JGNSXAqVYLW6XzxJEd8j1YdcwKx3I1" type="text/javascript"></script>   
-    <script src="../../Scripts/libs/modernizr-2.8.3.js" type="text/javascript"></script>   
-    <script src="../../Scripts/Trirand/ui.multiselect.js" type="text/javascript" ></script>
-    <script src="../../Scripts/Trirand/i18n/grid.locale-en.js" type="text/javascript"></script>
-    <script src="../../Scripts/Trirand/jquery.jqGrid.js" type="text/javascript"></script>
-    <script src="../../Scripts/libs/json2.js" type="text/javascript"></script>
-    <script src="../../eSchoolPLUSResource/GetEmbeddedScript?file=SungardCommon" type="text/javascript"></script>    
-    <script src="../../eSchoolPLUSResource/GetEmbeddedScript?file=Combobox" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function () {
-            parseForComboBoxes();
-        });
-    </script>    
-    
-
-    <script type="text/javascript">
-        $(SunGard.Common.Init('/HomeAccess/'));
-    </script>
-    
-    
-    
-    
-    <style>        
-        .sg-asp-calendar { width: 100%; font-size: 2.5em; }
-        .sg-asp-calendar-header {
-            border: none;
-	        border-bottom: medium solid #006699;
-	        font-weight: 700;
-	        color: #006699;
-        }
-        .sg-asp-calendar-today { border: 1px solid #006699; }
-
-        .sg-legend { border: 1px solid #006699; }
-        .sg-legend td  { padding-left: 5px; padding-right: 5px; }
-        .sg-legend tr.TableHeader td { text-align: center; }
-
-        .sg-width-38em { width: 38em; }
-    </style>
-    <script type="text/javascript" src="MonthlyView.js"></script>
-    <script type="text/javascript" src="../Common/Validation.js"></script>
-
-</head>
-<body>
-    
-    <div id='MainContent' class='sg-main-content'>
-        <div class='sg-hac-content'>
-            <form method="post" action="./MonthlyView.aspx" id="fmMain">
-<div class="aspNetHidden">
-<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
-<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="0wfjsca0uoOVnWMTJWVQqa0yYrOQZIXiw1UoToEW5Ayvk0gz2r8EQxpwfhj5yRKL0W8tTo2DpxXNgxjJVGwhk4PUb8sR+0cSrwKQS6u5WNc=" />
-</div>
-
-<script type="text/javascript">
-//<![CDATA[
-var theForm = document.forms['fmMain'];
-if (!theForm) {
-    theForm = document.fmMain;
-}
-function __doPostBack(eventTarget, eventArgument) {
-    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-        theForm.__EVENTTARGET.value = eventTarget;
-        theForm.__EVENTARGUMENT.value = eventArgument;
-        theForm.submit();
-    }
-}
-//]]>
-</script>
-
-
-<div class="aspNetHidden">
-
-	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C0F72E2D" />
-	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="cVDFcHKje66LuFSs6k5dEsfKs9Hb7xP4VLnzJgvDq5GMvkfxwbi48fPO97JvmZTVDQwoIdpeFfMjzh63UH3XF1vgPYbuTKb367DKxY+/fwBkPyLirERZK5v14f+eIqKhr41yrF/mZ55xK6RFEWtr+L23sMQGkkXVCK7I51zbN1FUfoGzdxh6i9xbm+KNcccRREL98TT/qjBnsgKVn3n8y6lrG5bMpc+yxYbEvbrP+XZW3wHYDu1hxiW5fIZ2HlecK7xaRZecVXr/YkHVefCaQqm/Ygm/gjuf3x8WtngvNhaJP0z6364uST2MFmyTeQ7QDfHHxicqUki9jnOuIgnKhCtEu6bv/bsPxrF3nqMSMV90Fcjsgd7fC7UPYe6dMQ928TgX3PFcg+B5A5k4lCkhQ2jjFbNAQ6DpYO/gvSMKfD1dXi3j1rFpVyBo8OgZuebs9+r5+W+k1HmW+NWY8Hz4OPbKQowiv52+vY9iBXR130Z8dIwrxmU22kfRhjnhAm7+t+eatapQuplCfiHwKZzgLc6TUYmHd4QcpYWigr084roeH/21D/1cQPL3HETp1v1GXESXLjElOSBkgoNthLCtY7IvIm+4DY0s9eynbODYobv4aAVyd0vQikhpa96wPDJ1NBwlns38EL2YoOMtqzLARV8oZA/HjQVVo5gMlzXVzqNuucLRQ24MNd0iBI1XFnOjSzlSCp97WgY5g2Lky9K4M/DIOilIVa9ZABy23MXNlJicxpYHmHdRNYG6qbeEIiPIFpev/Q2J72m8uNaVlLylukDI4xahM/J6ZxO99h27wT+E8VFZFLmVqRfKAm6pfVztpCWRtAFZ65fGIhKRStuw2yIdwQSdfP9blpkj8j62gX6NnCKdqCEiHznK98uWzLF6IJIpaVsy8M4toasn6wuJ6TOwU6H4d33cLi3iFBLAiWOwRh1Dhb/eoGorA/K3VM7tMtrpU8sSWe70gvBK3d1joxQtgxVL9ayBRFnvmQ+3iYpB1qMWSl0Egttlhj3uiSct0S3rYMZOEKS5U4ZVxAkqSBnl+WC/5hIFF427DEK0EBcfHQp8v1p1SyPcWaGbjwdmSfMztTseM3BKKaSsDq0LY8hVfKIUBNvpFpwk3YV4f25wnstTxrbSyBWY4KvY0os/UccdbskmHfL2sJy3Vd++OuN9gSp3C2DSSaTn+zUByXv8omctNCSG2GAB9y79iG1Blewl/hlfb/XTt/y/fNHp95YDex5ADF1pglqUv55tSpKRaIUKeiX3J/1HbMvnd5Dbv/8OC/bC4+m+6TyRmeZEZKpWn7E5FOmxQOgqN8Uunh7KOlfhsVUCj7AhY+ri46yn" />
-</div>
-                
-    
-
-	<div class="sg-header">
-       
-	</div>
-     
-    <div class="sg-content-grid">
-
-        
-
-        <div class="sg-content-alert-container sg-container-content">
-            
-        </div>
-        
-        <table id="plnMain_cldAttendance" title="Calendar" class="sg-asp-calendar" cellspacing="0" cellpadding="2" title="Calendar" style="border-width:1px;border-style:None;border-collapse:collapse;">
-	<tr><td colspan="7" style="background-color:White;border-color:White;"><table class="sg-asp-calendar-header" cellspacing="0" style="width:100%;border-collapse:collapse;">
-		<tr><td valign="bottom" style="font-weight:bold;width:15%;"><a href="javascript:__doPostBack('ctl00$plnMain$cldAttendance','V7549')" style="color:Black" title="Go to the previous month"><span title='Go to the previous month'>&lt;&lt;</span></a></td><td align="center" style="width:70%;">October 2020</td><td align="right" valign="bottom" style="font-weight:bold;width:15%;"><a href="javascript:__doPostBack('ctl00$plnMain$cldAttendance','V7610')" style="color:Black" title="Go to the next month"><span title='Go to the next month'>&gt;&gt;</span></a></td></tr>
-	</table></td></tr><tr><th align="center" abbr="Sunday" scope="col" style="font-weight:bold;">Sun</th><th align="center" abbr="Monday" scope="col" style="font-weight:bold;">Mon</th><th align="center" abbr="Tuesday" scope="col" style="font-weight:bold;">Tue</th><th align="center" abbr="Wednesday" scope="col" style="font-weight:bold;">Wed</th><th align="center" abbr="Thursday" scope="col" style="font-weight:bold;">Thu</th><th align="center" abbr="Friday" scope="col" style="font-weight:bold;">Fri</th><th align="center" abbr="Saturday" scope="col" style="font-weight:bold;">Sat</th></tr><tr><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td title="period: 05Attendance: Remote Asynchronousperiod: 06Attendance: Remote Asynchronousperiod: 07Attendance: Remote Asynchronousperiod: 08Attendance: Remote Asynchronous" align="center" style="background-color:#FFFFFF;width:14%;cursor:help;">1</td><td title="period: 01Attendance: Remote Asynchronousperiod: 02Attendance: Remote Asynchronousperiod: 03Attendance: Remote Asynchronousperiod: 04Attendance: Remote Asynchronous" align="center" style="background-color:#FFFFFF;width:14%;cursor:help;">2</td><td align="center" style="width:14%;background-color:#CCCCCC;">3</td></tr><tr><td align="center" style="width:14%;background-color:#CCCCCC;">4</td><td title="period: 05Attendance: Remote Asynchronousperiod: 06Attendance: Unexcused Absenceperiod: 07Attendance: Remote Asynchronous" align="center" style="width:14%;background-color:#FFCC99;cursor:help;">5</td><td title="period: 01Attendance: Remote Asynchronousperiod: 03Attendance: Remote Asynchronousperiod: 04Attendance: Remote Asynchronous" align="center" style="background-color:#FFFFFF;width:14%;cursor:help;">6</td><td title="period: 05Attendance: Remote Asynchronousperiod: 06Attendance: Remote Asynchronousperiod: 07Attendance: Remote Asynchronousperiod: 08Attendance: Remote Asynchronous" align="center" style="background-color:#FFFFFF;width:14%;cursor:help;">7</td><td title="period: 01Attendance: Remote Asynchronousperiod: 02Attendance: Remote Asynchronous" align="center" style="background-color:#FFFFFF;width:14%;cursor:help;">8</td><td title="period: 05Attendance: Unexcused Absenceperiod: 06Attendance: Remote Asynchronousperiod: 07Attendance: Remote Asynchronous" align="center" style="width:14%;background-color:#FFCC99;cursor:help;">9</td><td align="center" style="width:14%;background-color:#CCCCCC;">10</td></tr><tr><td align="center" style="width:14%;background-color:#CCCCCC;">11</td><td align="center" style="width:14%;background-color:#CCCCCC;">12</td><td align="center" style="width:14%;background-color:#CCCCCC;">13</td><td title="period: 03Attendance: Remote Asynchronousperiod: 04Attendance: Remote Asynchronous" class="sg-asp-calendar-today" align="center" style="background-color:#FFFFFF;width:14%;cursor:help;">14</td><td align="center" style="width:14%;">15</td><td align="center" style="width:14%;">16</td><td align="center" style="width:14%;background-color:#CCCCCC;">17</td></tr><tr><td align="center" style="width:14%;background-color:#CCCCCC;">18</td><td align="center" style="width:14%;">19</td><td align="center" style="width:14%;">20</td><td align="center" style="width:14%;">21</td><td align="center" style="width:14%;">22</td><td align="center" style="width:14%;">23</td><td align="center" style="width:14%;background-color:#CCCCCC;">24</td></tr><tr><td align="center" style="width:14%;background-color:#CCCCCC;">25</td><td align="center" style="width:14%;">26</td><td align="center" style="width:14%;">27</td><td align="center" style="width:14%;">28</td><td align="center" style="width:14%;">29</td><td align="center" style="width:14%;">30</td><td align="center" style="width:14%;background-color:#CCCCCC;">31</td></tr><tr><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td><td align="center" style="color:#999999;background-color:White;width:14%;"></td></tr>
-</table>
-        
-        <div class="sg-asp-calendar-header">
-            <label id="lblColorLegend">Color Legend</label>
-        </div>
-        <div class="sg-clearfix">
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Abs due to COVID-19 Concerns</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Absence from Homebound</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Absence from ISS</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Absent</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Campus Defined</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Citizenship</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>College Visit</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Court Ordered Appearance</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Critically Ill</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Department of Family and Protective Services</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Doctor Appointment</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Dual Credit Course</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Election Clerk</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Excused Absence</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Extenuating Circumstances</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Homebound (Local)</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>In-School Suspension</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Military</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Military Recruitment</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>No longer used 2017</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>No longer used 2017</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #ff0000;">&nbsp;&nbsp;&nbsp;</span>
-                <span>No longer used 2017</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>On Campus Present</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Present</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Religious/Holy Day</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #ffffff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Remote Asynchronous</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>School Related Absence</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #0033ff;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Suspended</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>TAPS at Funeral</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #6600cc;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Tardy</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Testing</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #006600;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Texas School of Blind and Visual Impaired (TSBVI)</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #ff0000;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Unexcused Absence</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #FFCC99;">&nbsp;&nbsp;&nbsp;</span>
-                <span>Multiple Attendance Codes</span>
-            </div>
-            
-            <div class="sg-left sg-width-38em">
-                <span style="background-color: #CCCCCC;">&nbsp;&nbsp;&nbsp;</span>
-                <span>School Closed</span>
-            </div>
-            
-        </div>
-    </div>
-
-    <input name="ctl00$plnMain$hdnValidMHACLicense" type="hidden" id="plnMain_hdnValidMHACLicense" value="Y" />
-    <input name="ctl00$plnMain$hdnPeriod" type="hidden" id="plnMain_hdnPeriod" value="period: " />
-    <input name="ctl00$plnMain$hdnAttendance" type="hidden" id="plnMain_hdnAttendance" value="Attendance: " />
-    <input name="ctl00$plnMain$hdnDismissTime" type="hidden" id="plnMain_hdnDismissTime" value="Dismiss Time: " />
-    <input name="ctl00$plnMain$hdnArriveTime" type="hidden" id="plnMain_hdnArriveTime" value="Arrive Time: " />
-    <input name="ctl00$plnMain$hdnColorLegend" type="hidden" id="plnMain_hdnColorLegend" />
-    <input name="ctl00$plnMain$hdnCalTooltip" type="hidden" id="plnMain_hdnCalTooltip" value="Calendar" />
-    <input name="ctl00$plnMain$hdnCalPrvMthToolTip" type="hidden" id="plnMain_hdnCalPrvMthToolTip" value="Go to the previous month" />
-    <input name="ctl00$plnMain$hdnCalNxtMthToolTip" type="hidden" id="plnMain_hdnCalNxtMthToolTip" value="Go to the next month" />
-    <input name="ctl00$plnMain$hdnMultipleAttendenceCodes" type="hidden" id="plnMain_hdnMultipleAttendenceCodes" value="Multiple Attendance Codes" />
-    <input name="ctl00$plnMain$hdnSchoolClosed" type="hidden" id="plnMain_hdnSchoolClosed" value="School Closed" />
-    <input name="ctl00$plnMain$hdnLegendNoCodes" type="hidden" id="plnMain_hdnLegendNoCodes" value="Attendance Codes could not be found." />
-    <input name="ctl00$plnMain$hdnHyperlinkText_exist" type="hidden" id="plnMain_hdnHyperlinkText_exist" value="(Alerts Are Limited. Click to View List of Selected Choices.)" /> 
-    <input name="ctl00$plnMain$hdnHyperlinkText_Noexist" type="hidden" id="plnMain_hdnHyperlinkText_Noexist" value="(Limit alerts to specific absense types)" /> 
-
-            </form>
-        </div>
-    </div>
-    <script>
-        $(function () {
-            // Build the jQuery UI buttons
-            $('.sg-buttonset').buttonset();
-            $('.sg-button').button();
-            window.parent.$('.sg-legacy-iframe').height($('.sg-main-content').height()); // set the init size
-            // Increase length of smaller content windows to reduce cutoffs in dropdowns. 
-            var iframeHeight = window.parent.$('.sg-legacy-iframe').height(); 
-            if (iframeHeight < 450)
-            { window.parent.$('.sg-legacy-iframe').height($('.sg-main-content').height() + 200); }
-           
-        })
-    </script>
-</body>
-</html>
